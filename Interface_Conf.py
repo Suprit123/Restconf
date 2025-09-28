@@ -29,7 +29,7 @@ interface_payload = {
 }
 
 # Make POST request to create/configure the interface
-response = requests.post(
+response = requests.put(
     url=restconf_url,
     auth=auth,
     headers=headers,
